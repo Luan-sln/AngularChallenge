@@ -1,0 +1,25 @@
+{
+  "pessoas": [
+    {
+      "nome": "Luan de Almeida Pedrangelo", 
+      "cpf": "12392630909",
+      "situacao": "Irregular",
+      "numeroContaAplica": "06663-9",
+      "numeroContaCorre": "19990-3"
+    },
+    {
+      "nome": "Osvaldo Pereira Silva", 
+      "cpf": "19722961674",
+      "situacao": "Regular",
+      "numeroContaAplica": "04593-0",
+      "numeroContaCorre": "36148-4"
+    },
+    {
+      "nome": "Bruna", 
+      "cpf": "32185232199",
+      "situacao": "Irregular",
+      "numeroContaAplica": "09996-0",
+      "numeroContaCorre": "31855-1"
+    }
+  ]
+}
