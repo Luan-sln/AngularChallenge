@@ -1,0 +1,109 @@
+h2{
+    font-weight: 500;
+    font-size: 18px;
+}
+span{
+    font-weight: lighter;
+    font-size: 12px;
+}
+h2,span{
+    color: black;
+}
+.container{
+    max-width: 575px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:32%;
+    left:3%;
+}
+
+.barra{
+    position: absolute;
+    top: 13%;
+    width: 40%;
+    left:30%;
+}
+
+.circle01{
+    position: absolute;
+    top: 18.7%;
+    left: 14.8%;
+    border-radius: 100%;
+    border: 2px solid rgb(22, 92, 125);
+    width: 20px;  
+    height: 20px;
+    border-color: rgb(22, 92, 125);
+    background-color: #d2dadd;
+    
+}
+.circle02{
+    margin-left: 14%;
+    position: absolute;
+    top: 18.7%;
+    left: 35%;
+    border-radius: 100%;
+    border: 2px solid;
+    width: 20px;  
+    height: 20px;
+    border-color: #969b9c;
+    background-color: #969b9c;;
+}
+.circle03{
+    margin-left: 350px;
+    position: absolute;
+    top: 18.7%;
+    left: 65%;
+    border-radius: 100%;
+    border: 2px solid ;
+    width: 20px;  
+    height: 20px;
+    border-color: #969b9c;
+    background-color: #969b9c;
+}
+.circle04{
+    margin-left: 500px;
+    position: absolute;
+    top: 18.7%;
+    left: 90%;
+    border-radius: 100%;
+    border: 2px solid;
+    width: 20px;  
+    height: 20px;
+    border-color: #969b9c;
+    background-color: #969b9c;
+}
+p{
+    color: rgb(22, 92, 125);
+    font-size: 12px;
+}
+.p1{
+    position: absolute;
+    top:22%;
+    left: 14.8%;
+}
+.p2{
+    position: absolute;
+    top:22%;
+    left: 34%;
+    color:#969b9c;
+}
+.p3{
+    position: absolute;
+    top:22%;
+    left: 63.4%;
+    color:#969b9c;
+}
+.p4{
+    position: absolute;
+    top:22%;
+    left: 89.5%;
+    color:#969b9c;
+}
+
+.dots{
+    display: flex;
+    position: absolute;
+    top:12%;
+    left:30%;
+}

@@ -1,0 +1,44 @@
+label{
+    color:#165C7D;
+    font-weight: 500;
+    font-size: 12px;
+}
+.inputCpf{
+    padding: 3px;
+    margin-top: 5px;
+}
+.btnConfirm{
+    position: relative; 
+    left: 5px;
+    background-color: #165C7D;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 12px;
+    color: white;
+}
+.btnConfirm:hover{
+    background-color: #0b2b3a;
+}
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.inf{
+    position: absolute;
+    top:50px;
+    left: 0;
+    color:red;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.content{
+    position:absolute;
+    left: 3%;
+    top: 47%;
+}

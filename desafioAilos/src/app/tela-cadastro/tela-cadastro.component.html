@@ -1,15 +1,15 @@
-<body>
+<body class="content">
     <form #form="ngForm">
-        <div>
-            <label>CPF:
+        <div class="container">
+            <label>CPF
                 <br>
                 <input type="text" placeholder="000.000.000-00" name="Cpf" #Cpf="ngModel" [ngModel]="cpf"
-                    (ngModelChange)="cpf=$event" required>
-                <span *ngIf="!Cpf.valid && (Cpf.dirty && Cpf.touched)">
-                    Informe um CPF Válido!
-                </span>
-            </label>
-            <button (click)="valida(cpf)" style="position: relative; left: 5px;">valida</button>
-        </div>
+                    (ngModelChange)="cpf=$event" required class="inputCpf" onkeypress="$(this).mask('000.000.000-00')">
+                    <span *ngIf="!valida" class="inf">
+                        Informe um CPF Válido!
+                    </span>
+                </label>
+                <button (click)="confereCpf(cpf)" class="btnConfirm">Consultar por CPF</button>
+            </div>
     </form>
 </body>
