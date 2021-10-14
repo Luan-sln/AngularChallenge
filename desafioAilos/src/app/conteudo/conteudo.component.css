@@ -1,10 +1,10 @@
 h2{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 26px;
 }
 span{
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 15px;
 }
 h2,span{
     color: black;
@@ -14,13 +14,14 @@ h2,span{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:32%;
-    left:3%;
+    top:20%;
+    left:2%;
 }
 
 .barra{
     position: absolute;
     top: 13%;
+    height: 2px;
     width: 40%;
     left:30%;
 }
@@ -38,7 +39,7 @@ h2,span{
     
 }
 .circle02{
-    margin-left: 14%;
+    margin-left: 240px;
     position: absolute;
     top: 18.7%;
     left: 35%;
@@ -50,7 +51,7 @@ h2,span{
     background-color: #969b9c;;
 }
 .circle03{
-    margin-left: 350px;
+    margin-left: 500px;
     position: absolute;
     top: 18.7%;
     left: 65%;
@@ -62,7 +63,7 @@ h2,span{
     background-color: #969b9c;
 }
 .circle04{
-    margin-left: 500px;
+    margin-left: 725px;
     position: absolute;
     top: 18.7%;
     left: 90%;
@@ -81,23 +82,31 @@ p{
     position: absolute;
     top:22%;
     left: 14.8%;
+    margin-top: 35px;
 }
 .p2{
     position: absolute;
     top:22%;
     left: 34%;
     color:#969b9c;
+    margin-left: 220px;
+    margin-top: 35px;
 }
 .p3{
     position: absolute;
     top:22%;
     left: 63.4%;
     color:#969b9c;
+    margin-top: 35px;
+    margin-left: 470px;
+    width: 500px;
 }
 .p4{
     position: absolute;
     top:22%;
     left: 89.5%;
+    margin-left: 715px;
+    margin-top: 35px;
     color:#969b9c;
 }
 

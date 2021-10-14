@@ -5,11 +5,11 @@
                 <br>
                 <input type="text" placeholder="000.000.000-00" name="Cpf" #Cpf="ngModel" [ngModel]="cpf"
                     (ngModelChange)="cpf=$event" required class="inputCpf" onkeypress="$(this).mask('000.000.000-00')">
-                    <span *ngIf="!valida" class="inf">
+                    <span *ngIf="valida" class="inf">
                         Informe um CPF Válido!
                     </span>
                 </label>
-                <button (click)="confereCpf(cpf)" class="btnConfirm">Consultar por CPF</button>
+                <button disabled="Cpf.valid" (click)="confereCpf(cpf)" class="btnConfirm">Consultar por CPF</button>
             </div>
     </form>
 </body>
