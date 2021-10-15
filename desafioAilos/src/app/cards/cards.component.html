@@ -1,1 +1,74 @@
-<p>cards works!</p>
+<div class="container">
+    <mat-card class="cards">
+        <mat-card-title>Situação cadastral do CPF</mat-card-title>
+        <mat-card-subtitle>Consulta na Receita Federal</mat-card-subtitle>
+        <mat-card-content>
+            <div style="display: flex;flex-direction: row;align-items: flex-end;">
+                <i class="fas fa-user" style="color:rgb(112, 112, 112); margin: 20px;font-size: 25px;"></i>
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <p>Nome</p>
+                    <span *ngIf="getDados">{{getDados.nome}}</span><br>
+                </div>
+            </div>
+
+            <div style="display: flex;" *ngIf="getDados">
+                <i *ngIf="getDados.situacao === 'Regular'" class="far fa-check-circle"
+                    style="color: rgb(10, 241, 21);margin: 20px;font-size: 25px;"></i>
+                <i *ngIf="getDados.situacao === 'Irregular'" class="far fa-times-circle"
+                    style="color: rgb(241, 10, 10);margin: 20px;font-size: 25px;"></i>
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <p>Situação do CPF</p>
+                    <span *ngIf="getDados">{{getDados.situacao}}</span><br>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="cardsContas">
+        <mat-card-title>Conta aplicação</mat-card-title>
+        <mat-card-subtitle>Cooperativa Viacredi</mat-card-subtitle>
+        <mat-card-content>
+            <div style="display: flex;flex-direction: row;align-items: flex-end;">
+                <i class="fas fa-credit-card" style="color:rgb(112, 112, 112); margin: 20px;font-size: 25px;"></i>
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <p>Número da conta</p>
+                    <span *ngIf="getDados">{{getDados.numeroContaAplica}}</span><br>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <br>
+                    <button class="btnDuplica">Duplicar Conta</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="cardsContas" style="left:44%">
+        <mat-card-title>Conta corrente</mat-card-title>
+        <mat-card-subtitle>Cooperativa Viacredi</mat-card-subtitle>
+        <mat-card-content>
+            <div style="display: flex;flex-direction: row;align-items: flex-end;">
+                <i class="fas fa-credit-card" style="color:rgb(112, 112, 112); margin: 20px;font-size: 25px;"></i>
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <p>Número da conta</p>
+                    <span *ngIf="getDados">{{getDados.numeroContaCorre}}</span><br>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="display: flex; flex-direction: column;align-items: flex-start;justify-content: space-evenly;">
+                    <br>
+                    <button class="btnDuplica">Duplicar Conta</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+</div>

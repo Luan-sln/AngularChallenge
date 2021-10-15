@@ -64,6 +64,7 @@ import { ConteudoComponent } from './conteudo/conteudo.component';
     CardsComponent,
     ConteudoComponent
   ],
+  exports:[TelaCadastroComponent],
   imports: [
     BrowserModule,
     FormsModule,

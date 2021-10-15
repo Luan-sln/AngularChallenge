@@ -8,11 +8,18 @@
 }
 
 mat-sidenav{
-  width: 75px;
+  width: 90px;
   background-color: #165c7d;
   display: flex;
   align-items: center;
 }
 .logoAilos{
   width: 70px;
+  padding-left: 2px;
+}
+.conteudo{
+  display: inline-block; 
+  align-content: center;
+  position: absolute;
+  left: 9%;
 }

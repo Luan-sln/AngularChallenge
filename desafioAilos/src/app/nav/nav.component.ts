@@ -5,10 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent{
+export class NavComponent {
   showFiller = true;
   opened: boolean = true;
+  public mostra: boolean = false;
 
+  public setDado(event: any) {
+    this.mostra = event;
+  }
 
 
 }

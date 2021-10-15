@@ -10,7 +10,8 @@ import { __values } from 'tslib';
 })
 export class TelaCadastroComponent implements OnInit {
   
-  public cpf:string = ""; 
+  public cpf:string = "";
+  @Output() public enviaDados = new EventEmitter;
   public show:boolean = false;
   public valida:boolean = true;
 
@@ -31,26 +32,33 @@ export class TelaCadastroComponent implements OnInit {
       numeroContaCorre: "36148-4"
     },
     {
-      nome: "Bruna", 
-      cpf: "321.852.321-99",
+      nome: "Bruna Formentin", 
+      cpf: "132.461.229-03",
+      situacao: "Irregular",
+      numeroContaAplica: "09996-0",
+      numeroContaCorre: "31855-1"
+    },
+    {
+      nome: "Giliarde Hausmmann", 
+      cpf: "117.420.599-70",
       situacao: "Irregular",
       numeroContaAplica: "09996-0",
       numeroContaCorre: "31855-1"
     }
   ]
   
+
   public confereCpf(event:string){
     for(let item of this.listPessoas){
       if(item.cpf == event){
         this.show=true;
         this.valida = true;
-        console.log("Funciona EBAAA")
+        this.enviaDados.emit(item);
         break;
       } 
       else{
-        this.valida= false;
+        this.valida = false;
       }
-      console.log(event);
     }
   }
 

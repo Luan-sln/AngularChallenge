@@ -1,7 +1,7 @@
 <mat-sidenav-container class="container">
     <mat-sidenav mode="side" opened >
-        <img src="../../assets/Sistema-Site.png" class="logoAilos"><br>
-        <div style="display: inline-block; align-content: center;">
+        <div class="conteudo">
+            <img src="../../assets/ailosLog.png" class="logoAilos"><br>
             <i class="fas fa-bars" style="position: absolute; left:28px; font-size: 25px; color: #eeeeee94;margin-top: 20px;"></i>
             <br>
             <br>
@@ -22,8 +22,8 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <app-header></app-header>
-        <app-conteudo></app-conteudo>
-        <app-footer></app-footer>
+        <app-conteudo (mostra)="setDado($event)"></app-conteudo>
+        <app-footer [mostraBtn]="mostra"></app-footer>
     </mat-sidenav-content>
 </mat-sidenav-container>
   

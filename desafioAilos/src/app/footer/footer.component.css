@@ -2,7 +2,7 @@
     display: flex;
     padding: 15px;
     position: fixed;
-    left: 75px;
+    left: 4%;
     bottom: 0;
     width: 100%;
     background-color: white;
@@ -17,6 +17,7 @@
     padding-bottom: 13px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-left: 22px;
 }
 .btnDica:hover{
     background-color: #e7eef1;
@@ -30,6 +31,7 @@
     padding-left: 25px;
     padding-right: 25px;
     margin-right: 10px;
+    margin-left: 20px;
     color: white;
 }
 .btnNewAdmit:hover{

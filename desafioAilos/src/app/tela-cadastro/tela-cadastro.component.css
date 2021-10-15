@@ -18,7 +18,7 @@ label{
     padding-bottom: 0;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     height: 40px;
     width: 185px;
@@ -26,6 +26,9 @@ label{
 }
 .btnConfirm:hover{
     background-color: #0b2b3a;
+}
+.btnConfirm:disabled{
+    background-color: #165c7d85;
 }
 .container{
     display: inline-flex;
@@ -41,9 +44,10 @@ label{
     font-size: 10px;
     font-weight: 400;
 }
-
 .content{
     position:absolute;
     left: 2%;
     top: 33%;
 }
+
+

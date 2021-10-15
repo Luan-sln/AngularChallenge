@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TelaCadastroComponent } from '../tela-cadastro/tela-cadastro.component';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  @Input() public mostraBtn:boolean = false;
 
-  public mostraBtn = true;
   constructor() { }
 
   ngOnInit(): void {
