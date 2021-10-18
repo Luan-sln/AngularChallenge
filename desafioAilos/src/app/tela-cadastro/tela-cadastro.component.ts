@@ -41,7 +41,7 @@ export class TelaCadastroComponent implements OnInit {
     {
       nome: "Giliarde Hausmmann", 
       cpf: "117.420.599-70",
-      situacao: "Irregular",
+      situacao: "Regular",
       numeroContaAplica: "09996-0",
       numeroContaCorre: "31855-1"
     }
