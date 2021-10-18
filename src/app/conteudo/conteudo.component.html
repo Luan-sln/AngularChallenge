@@ -1,22 +1,27 @@
-<mat-progress-bar class="barra" [color]="color" [mode]="mode" [value]="value">
-</mat-progress-bar>
-<div class="container">
-    <h2>Informe o CPF do futuro cooperado(a)</h2>
-    <span>Se necessário, você poderá duplicar uma conta existente ou pausar e retornar este cadastro futuramente.
-        Digite apenas os números (sem pontos ou traços)
-    </span>
+<div class="org">
+    
+    <div class="container">
+        <h2>Informe o CPF do futuro cooperado(a)</h2>
+        <span>Se necessário, você poderá duplicar uma conta existente ou pausar e retornar este cadastro futuramente.<br>
+            Digite apenas os números (sem pontos ou traços)
+        </span>
+    </div>
+    <app-tela-cadastro (enviaDados)="setDados($event)"></app-tela-cadastro>
+    <ng-template [ngIf]="getDados">
+        <app-cards [getDados]="getDados"></app-cards>
+    </ng-template>
 </div>
-<app-tela-cadastro (enviaDados)="setDados($event)"></app-tela-cadastro>
-<ng-template [ngIf]="getDados">
-    <app-cards [getDados]="getDados"></app-cards>
-</ng-template>
-<div class="dots">
-    <div class="circle01"></div>
-    <p class="p1">Início</p>
-    <div class="circle02"></div>
-    <p class="p2">Documentos</p>
-    <div class="circle03"></div>
-    <p class="p3">Dados Cadastrais</p>
-    <div class="circle04"></div>
-    <p class="p4">Admissão</p>
+<div class="progress">
+    <mat-progress-bar class="barra" [color]="color" [mode]="mode" [value]="value">
+    </mat-progress-bar>
+    <div class="dots">
+        <div class="circle01"></div>
+        <p class="p1">Início</p>
+        <div class="circle02"></div>
+        <p class="p2">Documentos</p>
+        <div class="circle03"></div>
+        <p class="p3">Dados Cadastrais</p>
+        <div class="circle04"></div>
+        <p class="p4">Admissão</p>
+    </div>
 </div>

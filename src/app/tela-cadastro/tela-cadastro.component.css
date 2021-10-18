@@ -34,6 +34,7 @@ label{
     display: inline-flex;
     flex-direction: row;
     align-items: flex-end;
+   
 }
 
 .inf{
@@ -45,9 +46,14 @@ label{
     font-weight: 400;
 }
 .content{
-    position:absolute;
+    /* position:absolute;
     left: 2%;
-    top: 33%;
+    top: 33%; */
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    left: 2%;
+    position: relative;
 }
 
 
